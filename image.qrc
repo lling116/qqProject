@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/login">
+        <file>image/login.png</file>
+        <file>image/qq.png</file>
+        <file>image/avatar.svg</file>
+        <file>image/inputBox-more.svg</file>
+        <file>image/soft-keyboard.svg</file>
+    </qresource>
+</RCC>
