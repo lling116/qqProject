@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dialogWindow</class>
+ <widget class="QWidget" name="dialogWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>791</width>
+    <height>462</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QQ</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="image.qrc">
+    <normaloff>:/login/image/avatar.svg</normaloff>:/login/image/avatar.svg</iconset>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>0</y>
+     <width>241</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px solid black; </string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="dialog.qrc">:/image/hh.jpg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>551</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QTextBrowser" name="textBrowser"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QFontComboBox" name="fontComboBox"/>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="spinBox"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="bBtn">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="dialog.qrc">
+          <normaloff>:/dialogWindow/image/bold.png</normaloff>:/dialogWindow/image/bold.png</iconset>
+        </property>
+        <property name="autoRepeat">
+         <bool>false</bool>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="IBtn">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="dialog.qrc">
+          <normaloff>:/dialogWindow/image/italic.png</normaloff>:/dialogWindow/image/italic.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="uBtn">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="dialog.qrc">
+          <normaloff>:/dialogWindow/image/under.png</normaloff>:/dialogWindow/image/under.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="clearBtn">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="dialog.qrc">
+          <normaloff>:/dialogWindow/image/clear.png</normaloff>:/dialogWindow/image/clear.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="sendBtn_2">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="dialog.qrc">
+          <normaloff>:/dialogWindow/image/send.png</normaloff>:/dialogWindow/image/send.png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>68</width>
+          <height>17</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QPushButton" name="sureBtn">
+          <property name="text">
+           <string>发送</string>
+          </property>
+          <property name="icon">
+           <iconset resource="image.qrc">
+            <normaloff>:/login/image/avatar.svg</normaloff>:/login/image/avatar.svg</iconset>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="text">
+           <string>关闭</string>
+          </property>
+          <property name="icon">
+           <iconset resource="image.qrc">
+            <normaloff>:/login/image/qq.png</normaloff>:/login/image/qq.png</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <zorder>fontComboBox</zorder>
+  <zorder>bBtn</zorder>
+  <zorder>spinBox</zorder>
+  <zorder>IBtn</zorder>
+  <zorder>uBtn</zorder>
+  <zorder>clearBtn</zorder>
+  <zorder>sendBtn_2</zorder>
+  <zorder>textBrowser</zorder>
+  <zorder>textEdit</zorder>
+  <zorder>pushButton_3</zorder>
+  <zorder>sureBtn</zorder>
+  <zorder>sureBtn</zorder>
+  <zorder>pushButton_3</zorder>
+  <zorder>textEdit</zorder>
+  <zorder></zorder>
+  <zorder></zorder>
+  <zorder>horizontalSpacer_4</zorder>
+  <zorder>label</zorder>
+ </widget>
+ <resources>
+  <include location="dialog.qrc"/>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

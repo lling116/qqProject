@@ -15,6 +15,7 @@ QQMainWindow::QQMainWindow(QWidget *parent) :
                    &~Qt::WindowMaximizeButtonHint);
     setFixedSize(420,300);
     regWindow= new registerWindow;
+    m_showwindow = new showwindow;
 
     countAction = new QAction(this);
     countAction->setIcon(QIcon(":/login/image/inputBox-more.svg"));
@@ -73,6 +74,7 @@ void QQMainWindow::on_loginBtn_clicked()
         ui->picturelabel->move(180,130);
         loginFlag=1;
         m_Timer->start(1000);
+        m_showwindow->show();
     }
 
      else{

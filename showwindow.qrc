@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/show">
+        <file>image/love.jpg</file>
+        <file>image/qmnn.png</file>
+        <file>image/Cherry.png</file>
+        <file>image/ymrl.png</file>
+        <file>image/dr.png</file>
+    </qresource>
+</RCC>

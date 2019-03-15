@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/dialogWindow">
+        <file>image/bold.png</file>
+        <file>image/italic.png</file>
+        <file>image/send.png</file>
+        <file>image/under.png</file>
+        <file>image/clear.png</file>
+        <file>image/show.jpeg</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>image/hh.jpg</file>
+    </qresource>
+</RCC>

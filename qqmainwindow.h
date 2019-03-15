@@ -5,6 +5,7 @@
 #include<QAction>
 #include"registerwindow.h"
 #include<QTimer>
+#include "showwindow.h"
 
 namespace Ui {
 class QQMainWindow;
@@ -29,6 +30,7 @@ private slots:
 
 private:
     Ui::QQMainWindow *ui;
+    showwindow* m_showwindow;
     registerWindow* regWindow;
     QAction *countAction;
     QAction *pwdAction;

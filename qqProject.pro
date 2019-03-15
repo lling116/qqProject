@@ -15,12 +15,20 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         qqmainwindow.cpp \
-    registerwindow.cpp
+    registerwindow.cpp \
+    showwindow.cpp \
+    dialogwindow.cpp
 
 HEADERS  += qqmainwindow.h \
-    registerwindow.h
+    registerwindow.h \
+    showwindow.h \
+    dialogwindow.h
 
-FORMS    += qqmainwindow.ui
+FORMS    += qqmainwindow.ui \
+    showwindow.ui \
+    dialogwindow.ui
 
 RESOURCES += \
-    image.qrc
+    image.qrc \
+    showwindow.qrc \
+    dialog.qrc
