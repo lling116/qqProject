@@ -11,7 +11,7 @@ showwindow::showwindow(QWidget *parent) :
     setFixedSize(289,478);
     //初始化好友列表
     initTreeWidget();
-    mDialogWindow = new dialogWindow;
+  //  mDialogWindow = new dialogWindow;
    connect(ui->treeWidget,&QTreeWidget::itemDoubleClicked,this,&showwindow::DelItemDoubleClicked);
 }
 
@@ -41,14 +41,40 @@ void showwindow::initTreeWidget()
     colleaguesOneTwo->setText(0,tr("高工"));
 }
 
-void showwindow::DelItemDoubleClicked(QTreeWidgetItem *item, int column)
+void showwindow::DelItemDoubleClicked( QTreeWidgetItem*item, int column)
 {
-   qDebug()<<"打开对话框";
-   qDebug()<<item->text(column);
+  // qDebug()<<"打开对话框";
+  // qDebug()<<item->text(column)QTreeWidgetItem;
    //解决点击分组名称，进入对话框的问题
    if(!item->childCount())
    {
-       mDialogWindow->show();
+       // mDialogWindow->show();
+       //emit sendItemText(item->text(0));
+       //为解决内存分配问题，1.可以预先分配一定数目的内存；二是当点击在分配内存如下：
+       //qDebug()<<ui->treeWidget->currentColumn()<<ui->treeWidget->currentItem();
+      // int i = (int)ui->treeWidget->currentItem();
+       //qDebug()<<i;
+       bool flag = false;
+       for(int i = 0; i <  treeWidgetList.size();i++)
+       {
+           if(ui->treeWidget->currentItem()==treeWidgetList.at(i))
+           {
+               dialogWindowList.at(i)->show();
+               flag = true;
+               break;
+           }
+
+        }
+
+       if(!flag)
+       {
+           treeWidgetList<<ui->treeWidget->currentItem();
+           dialogWindow * temp = new dialogWindow(ui->treeWidget->currentItem()->text(0));
+           temp->show();
+           dialogWindowList<<temp;
+       }
+
    }
 
+   qDebug()<<treeWidgetList.size();
 }

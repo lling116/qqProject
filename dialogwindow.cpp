@@ -3,13 +3,13 @@
 #include<QPixmap>
 #include<QDebug>
 
-dialogWindow::dialogWindow(QWidget *parent) :
+dialogWindow::dialogWindow(QString titleStr,QWidget *parent) :
     QWidget(parent),
     ui(new Ui::dialogWindow)
 {
     ui->setupUi(this);
     setFixedSize(791,462);
-
+    setWindowTitle(titleStr);
 }
 
 dialogWindow::~dialogWindow()
@@ -46,4 +46,32 @@ void dialogWindow::on_sureBtn_clicked()
         ui->textEdit->clear();
     }
 
+}
+
+void dialogWindow::on_pushButton_3_clicked()
+{
+    this->close();
+}
+
+void dialogWindow::on_fontComboBox_currentIndexChanged(const QString &arg1)
+{
+    //槽函数使用错误
+    qDebug()<<arg1;
+    //ui->textBrowser->setFontFamily(arg1);
+}
+
+void dialogWindow::on_clearBtn_clicked()
+{
+    ui->textBrowser->clear();
+}
+
+void dialogWindow::on_fontComboBox_currentFontChanged(const QFont &f)
+{
+    ui->textBrowser->setFont(f);
+     ui->textBrowser->setFocus();
+}
+
+void dialogWindow::on_bBtn_clicked()
+{
+     ui->textBrowser->setFontWeight(QFont::Bold);
 }

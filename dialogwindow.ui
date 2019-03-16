@@ -39,7 +39,7 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -58,7 +58,11 @@
        <widget class="QFontComboBox" name="fontComboBox"/>
       </item>
       <item>
-       <widget class="QSpinBox" name="spinBox"/>
+       <widget class="QSpinBox" name="spinBox">
+        <property name="maximum">
+         <number>10</number>
+        </property>
+       </widget>
       </item>
       <item>
        <widget class="QPushButton" name="bBtn">
@@ -177,28 +181,12 @@
     </item>
    </layout>
   </widget>
-  <zorder>fontComboBox</zorder>
-  <zorder>bBtn</zorder>
-  <zorder>spinBox</zorder>
-  <zorder>IBtn</zorder>
-  <zorder>uBtn</zorder>
-  <zorder>clearBtn</zorder>
-  <zorder>sendBtn_2</zorder>
-  <zorder>textBrowser</zorder>
-  <zorder>textEdit</zorder>
-  <zorder>pushButton_3</zorder>
-  <zorder>sureBtn</zorder>
-  <zorder>sureBtn</zorder>
-  <zorder>pushButton_3</zorder>
-  <zorder>textEdit</zorder>
-  <zorder></zorder>
-  <zorder></zorder>
-  <zorder>horizontalSpacer_4</zorder>
+  <zorder>layoutWidget</zorder>
   <zorder>label</zorder>
  </widget>
  <resources>
-  <include location="dialog.qrc"/>
   <include location="image.qrc"/>
+  <include location="dialog.qrc"/>
  </resources>
  <connections/>
 </ui>
