@@ -41,6 +41,16 @@ registerWindow::registerWindow(QWidget *parent) : QWidget(parent)
      connect(okBtn,SIGNAL(clicked()),this,SLOT(regExpCount()));
 }
 
+QString registerWindow::getPassword()
+{
+    return pwdLineEdit->text();
+}
+
+QString registerWindow::getAccount()
+{
+    return countLineEdit->text();
+}
+
 void registerWindow::regExpCount()
 {
     QRegExp mRegExp(tr("[1-9]{1}[0-9]{8}"));
@@ -56,7 +66,7 @@ void registerWindow::regExpCount()
                                  QMessageBox::Ok);
         return;
     }
-
+   emit SureRegister();
 }
 
 //退出

@@ -12,15 +12,16 @@ class registerWindow : public QWidget
     Q_OBJECT
 public:
     explicit registerWindow(QWidget *parent = 0);
-
-
-signals:
+    QString getPassword();
+    QString getAccount();
 
 public slots:
     void quitWindow();
     //正则表达式
     void regExpCount();
 
+signals:
+    void SureRegister();
 private:
     QGridLayout* gridLayout;
     QLabel *countLabel;
@@ -29,10 +30,9 @@ private:
     QLineEdit *countLineEdit;
     QLineEdit *pwdLineEdit;
     QLineEdit *pwdAgainLineEdit;
-    QPushButton *okBtn;
     QPushButton *quitBtn;
     QHBoxLayout  *hLayout;
-
+    QPushButton *okBtn;
 
 };
 

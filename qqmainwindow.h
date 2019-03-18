@@ -6,6 +6,7 @@
 #include"registerwindow.h"
 #include<QTimer>
 #include "showwindow.h"
+#include<QTcpSocket>
 
 namespace Ui {
 class QQMainWindow;
@@ -27,6 +28,8 @@ private slots:
 
     void on_loginBtn_clicked();
     void updateTimer();
+    void accountRegister();
+    void delreadyRead();
 
 private:
     Ui::QQMainWindow *ui;
@@ -38,6 +41,11 @@ private:
     //保存没移动之前的pso
     QPoint picLabelPos;
     QTimer *m_Timer;
+
+    //net
+    QTcpSocket *tcpSocket;
+    QString ip;
+    qint16 port;
 };
 
 #endif // QQMAINWINDOW_H
